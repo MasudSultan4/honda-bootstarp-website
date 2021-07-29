@@ -19,7 +19,7 @@
       <!-- main header section  -->
       <section class="container mb-5 py-4">
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-12 mb-5">
             <p class="text-white-50">
               Computer-controlled digital transistorized with electronic advance
             </p>
@@ -29,12 +29,65 @@
               amet sint. Velit officia consequat duis enim velit mollit.
               Exercitation veniam consequat sunt nostrud amet
             </p>
-            <button class="text-white bg-color border-0 px-5 py-2 rounded">
+
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="text-white bg-color border-0 px-5 py-2 rounded"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
               Purchase
             </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Honda-CBR
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    The Honda CBR models are a series of Honda sport bikes first
+                    introduced in 1983. With the exception of the
+                    single-cylinder CBR125R, CBR150R, CBR250R and CBR300R, all
+                    CBR motorbikes have inline engines. Less sporting/general
+                    models make up CB series
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save As
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <img src="images/header-bike.png" alt="" />
+          <div class="col-lg-6 col-md-12">
+            <img class="img-fluid" src="images/header-bike.png" alt="" />
           </div>
         </div>
       </section>
@@ -42,15 +95,15 @@
 
     <main class="container">
       <!-- Fetured Bikes section  -->
-      <section class="">
+      <section>
         <div class="text-center">
           <h1 class="fw-bold">Fetured Bikes 2021</h1>
           <p class="color">Best bike collection</p>
         </div>
         <!-- honda cbr photo -->
-        <div class="row mt-5 row-cols-1 row-cols-md-3 g-5">
+        <div class="row mt-5 row-cols-1 row-cols-md-3 g-5 align-items-center">
           <div class="col">
-            <div class="card h-100 border-0">
+            <div class="border-0 me-5">
               <img
                 src="images/feature-bike.png"
                 class="img card-img-top"
@@ -59,7 +112,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 border-0">
+            <div class="border-0 me-5">
               <img
                 src="images/feature-bike.png"
                 class="card-img-top"
@@ -68,7 +121,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card h-100 border-0">
+            <div class="border-0 me-5">
               <img
                 src="images/feature-bike.png"
                 class="img card-img-top"
@@ -178,12 +231,12 @@
         </h1>
 
         <div class="mt-5">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-lg-6">
               <img src="images/faq.png" alt="" />
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 mt-5">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item mb-4">
                   <h2 class="accordion-header" id="headingOne">
@@ -292,7 +345,7 @@
                     aria-labelledby="headingThree"
                     data-bs-parent="#accordionExample"
                   >
-                    <div class="accordion-body">
+                    <div class="accordion-body text-muted">
                       1.Go With the Traffic Flow. Ride on the right in the same
                       direction as other vehicles.<br />
                       2.Obey All Traffic Laws. A bicycle is a vehicle and you're
